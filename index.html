@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Neo TheKreator</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Neo TheKreator</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>  
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="secion__pic-container">
+            <img src="./assets/Neo Profile Picture 2024.png" alt="Neo TheKreator profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Neo Matsio</h1>
+            <p class="section__text__p2">Creative Digital Creator</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/neomatsioresume.pdf')">Download CV</button>
+                <button class="btn btn-color-3" onclick="window.open('./assets/neothekreatormatsioportfoliopresentation.pdf')">Profolio</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin logo.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/neo-matsio-74b47942/'">
+                <img src="./assets/github logo.png" alt="My Github profile" class="icon" onclick="location.href='https:https://github.com/NeoM84'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/About Me Picture 2024.png" alt="Profile picture" class="about-pic"/>
+            </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+             <div class="details-container">
+                <img src="./assets/suitcase.png" alt="Experience icon" class="icon"/>
+                <h3>Experience</h3>
+                <p>5+ years <br /> Graphic Designer</p>
+                <p>1+ years <br /> Web Developer</p>
+             </div>
+             <div class="details-container">
+                <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                <h3>Education</h3>
+                <p>Digital Design Masterclass For Graphic Designers (Udemy) <br /> Reponive Web Design (freeCodeCamp)</p>
+             </div>
+          </div>
+          <div class="text-container">
+            <p>I'm Neo Matsio (Neo The Kreator), a Johannesburg based graphic designer and web developer. 
+
+                With a passion for graphic design principles such as white space, balance, alignment and contrast. I believe that every design project I work on should be functional and suit the needs each client has.To achieve this I have armed myself with strong technical skills and proficiency in Adobe software such as illustrator, indesign and photoshop. 
+                
+                In my web development journey I've been able to continuously learn more as technology evolves and newer languages, libraries and frameworks are rolled out. Web development challenges me to keep learning and strive to bettering myself and skillset and as challenging as it gets I've learned to keep researching for solutions. 
+                
+                Combing my skills in graphic design, knowledge of the basics of UI design and web development, has helped me be a better graphic designer and web developer overall.
+            </p>
+          </div>
+         </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Web Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <P>Basic</P>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Graphic Designer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Illustrator</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Photoshop</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>InDesign</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/CSS Cat Painting (Phone Wallpaper).png" alt="css-cat-painting" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">CSS Cat Painting</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/NeoM84/cat-css-painting.git'">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/Nutrition Facts Code.png" alt="htmlproject" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">HTML Nutrition Facts</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/NeoM84/nutrition-label-html.git'">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/Instagram Post (Phone Wallpaper).png" alt="chelseafcposter" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Social Media Poster</h2>
+                
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/Mongale LCC Logo (Phone Wallpaper).png" alt="mongalelogo" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Mongale LLC Logo</h2>
+            </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon" />
+                <p><a href="mailto:nmatsio@gmail.com">nmatsio@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin logo.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/neo-matsio-74b47942/'">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>   
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Neo Matsio. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
